@@ -29,6 +29,26 @@ class Series{
         System.out.println('\n');
         return evenSum;
     }
+
+    public static int evenSeriesWhile(){
+        int i = 0,evenSum = 0;
+        while(i<20){
+            i += 2;
+            System.out.println(i+" ");
+            evenSum += i;
+        }
+        return evenSum;
+    }
+
+    public static int evenSeriesDoWhile(){
+        int i = 0, evenSum = 0;
+        do{
+            i+=2;
+            evenSum += i;
+            System.out.println(i+" ");
+        } while(i<20);
+        return evenSum;
+    }
     
     public static int oddSeries(){
         int oddSum = 0;
@@ -39,7 +59,18 @@ class Series{
         System.out.println('\n');
         return oddSum;
     }
+
+    public static int oddSeriesWhile(){
+        int i=1,oddSum = i;
+        while(i<20){
+            System.out.println(i+" ");
+            i+=2;
+            oddSum+=i;
+        }
+        return oddSum;
+    }
 }
+
 
 class NumberChecker {
     public static void isPositive(int num){
@@ -51,6 +82,7 @@ class NumberChecker {
         else System.out.println("Odd Number");
     }
 }
+
 
 class ResultCheck {
     public static void check(){
